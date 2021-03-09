@@ -1,0 +1,230 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    background-color: #1e272e;
+
+    margin: 0;
+}
+
+/***** Main Container *****/
+.main-container {
+    background: url('../images/p2.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position:center;
+}
+
+.main-container img{
+    object-fit: scale-down;
+
+}
+.title {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sub-title {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.me {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background: url('../images/me.png') no-repeat;
+    border-radius: 100%;
+    border: 8px solid white;
+    background-size: cover;
+}
+
+.sub-container {
+    background: url('../images/pc3.jpeg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position:center;
+}
+
+/***** About Container *****/
+
+.about-me {
+    width: 50%;
+    background-color: rgb(0, 0, 0, 0.67);
+}
+
+.about-me .text-container {
+    padding: 30px;
+    opacity: 2;
+    color: white;
+}
+
+/***** Footer *****/
+
+#footer {
+    height: 100vh;
+    background-color: #1e272e;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.f-title {
+    margin-top: 30px;
+    display: inline;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+form {
+    padding: 40px;
+}
+
+
+.cp {
+    text-align: center;
+    opacity: 0.4;
+    margin: 30px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.fa{
+    color: white;
+}
+
+.but {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.f-input {
+    display: flex;
+    justify-content: center;
+}
+
+.f-input .form-group {
+    margin: 10px;
+}
+
+textarea {
+    width: 500px;
+}
+
+.min-container {
+    width: 100%;
+    padding: 20px;
+    opacity: 2;
+    color: white;
+    display: flex;
+    flex-direction:row;
+}
+.min-container div p {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .text-container {
+      display: none;
+    }
+    .about-me {
+
+        width: 80%;
+    }
+    .f-title {
+        margin-top: 200px;
+    }
+    #footer{
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 474px) {
+    .min-container div p {
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 609px) {
+    .min-container div p {
+        font-size: 13px;
+    }
+    .text-container {
+        display: none;
+    }
+    .f-title {
+        margin-top: 200px;
+    }
+}
+@media only screen and (width: 606px) {
+    .min-container div p {
+        font-size: 13px;
+    }
+    .text-container {
+        display: none;
+    }
+    .f-title {
+        margin-top: 200px;
+    }
+}
+@media only screen and (width: 603px) {
+    .min-container div p {
+        font-size: 13px;
+    }
+    .text-container {
+        display: none;
+    }
+    .f-title {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (min-width: 610px) {
+    .min-container div p {
+        font-size: 13px;
+        display: none;
+    }
+
+    .text-container {
+        font-size: 40;
+        display: inline-block
+    }
+    .f-title {
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 411px) {
+    .min-container div p {
+        font-size: 13px;
+    }
+}
