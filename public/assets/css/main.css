@@ -130,6 +130,22 @@ form {
     border-radius: 5px;
 }
 
+.but-cv {
+    text-decoration: none !important;
+    padding:10px;
+    color:black;
+    background-color: white;
+    border-radius: 9px;
+    transition: all 0.4s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.but-cv:hover {
+    font-size: 16px;
+    padding: 8px;
+    color: rgb(36, 9, 9);
+}
+
 .row {
     display: flex;
     justify-content: center;
@@ -155,6 +171,7 @@ textarea {
     color: white;
     display: flex;
     flex-direction:row;
+    justify-content: center
 }
 .min-container div p {
     text-align: left;

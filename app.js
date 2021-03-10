@@ -12,9 +12,14 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/download', (req, res) => {
+    res.download(__dirname  + '/public/cv.pdf');
+});
+
 app.get('*', (req, res) => {
     res.render('404');
 });
+
 
 
 app.listen(process.env.PORT, () => {
