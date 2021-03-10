@@ -21,9 +21,13 @@ document.getElementById('btn-submit').addEventListener("click", function (e){
   let message = document.getElementById('mesage');
   let email = document.getElementById('email');
   let name = document.getElementById('name');
-
-  postData('http://carlosng.com/sendMail', { email, name, message })
+  console.log(email.value);
+  postData('http://www.carlosng.com/sendMail', { email: email.value, name: name.value, message: message.value })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
   });
+  if(message) message.value = '';
+  if(email) email.value = '';
+  if(name) name.value = '';
+
 });
