@@ -249,3 +249,14 @@ textarea {
         width: 100%;
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+
+    .main-container {
+      width: 324px;
+      float: none;
+      margin: 0;
+    }
+
+  }
