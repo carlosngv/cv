@@ -18,7 +18,7 @@ async function postData(url = '', data = {}) {
 
 document.getElementById('btn-submit').addEventListener("click", function (e){
   e.preventDefault();
-  let message = document.getElementById('mesage');
+  let message = document.getElementById('message');
   let email = document.getElementById('email');
   let name = document.getElementById('name');
   console.log(email.value);
