@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
@@ -42,10 +45,10 @@ html, body {
 }
 
 .me {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border: 1px solid black;
-    background: url('../images/me.png') no-repeat;
+    background: url('../images/me.jpeg') no-repeat;
     border-radius: 100%;
     border: 8px solid white;
     background-size: cover;
@@ -173,9 +176,97 @@ textarea {
     justify-content: center;
     flex-direction:column;
 }
+
+
 .min-container div p {
     text-align: left;
 }
+
+/* Projects */
+.pr-container {
+    background: url('../images/pc.jpeg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position:center;
+    -webkit-background-size: 1587px 880px
+}
+
+.projects {
+    width: 50%;
+    background-color: rgb(0, 0, 0, 0.67);
+}
+.projects .text-container {
+    padding: 30px;
+    opacity: 3;
+    color: white;
+}
+
+.app-card {
+    height: 200px;
+    width: 260px;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    transition: all 0.3s ease-out;
+  }
+
+.app__card {
+
+  width: 200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+text-decoration: none;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px rgba(0,0,0,0.4);
+  background: rgb(29, 26, 26);
+  transform-origin: center center 0px;
+  transition: all .5s ease-out;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX(30deg) rotateY(3deg) rotateZ(-20deg);
+  z-index: 1;
+  display: flex;
+    justify-content :space-around;
+    align-items: center;
+    color: white;
+
+}
+.app__card:hover {
+    animation: unset;
+    text-decoration: none;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    color: white;
+}
+  .pr-text {
+    text-decoration: none;
+    max-width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.projects .text-container {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media only screen and (max-width: 600px) {
     .text-container {
