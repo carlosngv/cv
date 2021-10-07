@@ -46,7 +46,7 @@ html, body {
 
 .me {
     width: 230px;
-    height: 230px;
+    height: 250px;
     border: 1px solid black;
     background: url('../images/me.jpeg') no-repeat;
     border-radius: 100%;
@@ -134,15 +134,19 @@ form {
     border-radius: 5px;
 }
 
+.but-container {
+    margin: 20px;
+}
+
 .but-cv {
     text-decoration: none !important;
     padding:10px;
     color:black;
+    font-weight: bold;
     background-color: white;
     border-radius: 9px;
     transition: all 0.4s;
     font-family: 'Open Sans', sans-serif;
-    margin: 10px;
 }
 
 .but-cv:hover {

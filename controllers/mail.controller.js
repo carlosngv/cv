@@ -12,6 +12,10 @@ const nodemailer = require("nodemailer");
     },
   });
 
+  console.log(message);
+  console.log(email);
+  console.log(name);
+
   try {
     var mailOptions = {
         from: 'carlosngv99@gmail.com',
@@ -20,6 +24,7 @@ const nodemailer = require("nodemailer");
         text: message + ' | Correo: ' + email,
       };
       transporter.sendMail(mailOptions, function (error, info) {
+
         if (error) {
           console.log(error);
         } else {

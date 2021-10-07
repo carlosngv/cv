@@ -23,6 +23,7 @@ document.getElementById('btn-submit').addEventListener("click", function (e){
   let name = document.getElementById('name');
   console.log(email.value);
   postData('http://www.carlosng.com/sendMail', { email: email.value, name: name.value, message: message.value })
+  // postData('http://localhost:3000/sendMail', { email: email.value, name: name.value, message: message.value })
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
   });
