@@ -5,12 +5,10 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     background-color: #1e272e;
-
     margin: 0;
 }
 
-
-/***** Main Container *****/
+/* **** Main Container ****
 .main-container {
     background: url('../images/code4.jpg') no-repeat;
     background-color: #1e272e;
@@ -30,69 +28,57 @@ html, body {
 .main-container img{
     object-fit: scale-down;
 
-}
-.title {
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-}
+} */
 
-.sub-title {
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    border: 6px solid white;
-    padding: 10px;
-}
-
-.me {
-    width: 230px;
-    height: 250px;
-    border: 1px solid black;
-    background: url('../images/me.jpeg') no-repeat;
-    border-radius: 100%;
-    border: 8px solid white;
-    background-size: cover;
-}
-
-.sub-container {
-    background: url('../images/pc3.jpg') no-repeat;
-    background-size: cover;
+.main-container {
+    color: #1e272e;
+    background-color:#ffff;
     height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-position:center;
-    -webkit-background-size: 1587px 880px
 }
 
-/***** About Container *****/
-
-.about-me {
-    width: 50%;
-    background-color: rgb(0, 0, 0, 0.67);
+.main-container h1 {
+    position: relative;
+    width: 12ch;
+    font-weight: bold;
+    animation: type 2s steps(18), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
 }
 
-.about-me .text-container {
-    padding: 30px;
-    opacity: 2;
-    color: white;
+.main-container__gif {
+
+    height: 200px;
+
 }
 
-/***** Footer *****/
 
-#footer {
-    height: 100vh;
-    background-color: #1e272e;
-    color:white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+@keyframes type {
+    0% {
+        width: 0;
+    }
 }
+
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+/* Navbar */
+
+nav{
+    padding: 20px;
+
+    border: 1px solid black;
+}
+
+/* Footer and contact form */
 
 .f-title {
     margin-top: 30px;
@@ -112,7 +98,7 @@ form {
     opacity: 0.4;
     text-decoration: none;
     padding: 30px;
-    color:grey;
+    color: #fff;
 }
 
 .cp:hover {
@@ -134,155 +120,15 @@ form {
     width:10px
 }
 
-.but {
-    color: white;
-    background-color: black;
-    border: none;
-    padding: 20px;
-    width: 200px;
-    border-radius: 5px;
-}
 
-.but-container {
-    margin: 20px;
-}
-
-.but-cv {
-    text-decoration: none !important;
-    padding:10px;
-    color:black;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 9px;
-    transition: all 0.4s;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.but-cv:hover {
-    color: rgb(36, 9, 9);
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-}
-
-.f-input {
-    display: flex;
-    justify-content: center;
-}
-
-.f-input .form-group {
-    margin: 10px;
-}
-
-textarea {
-    width: 500px;
-}
-
-.min-container {
-    width: 100%;
-    padding: 20px;
-    opacity: 2;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction:column;
-}
-
-
-.min-container div p {
-    text-align: left;
-}
-
-/* Projects */
-.pr-container {
-    background: url('../images/pc.jpeg') no-repeat;
-    background-size: cover;
+#footer {
     height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
+    background-color: #1e272e;
+    color:white;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-position:center;
-    -webkit-background-size: 1587px 880px
 }
-
-.projects {
-    width: 50%;
-    background-color: rgb(0, 0, 0, 0.67);
-}
-.projects .text-container {
-    background: url('../images/construction.png') no-repeat;
-    padding: 30px;
-
-    opacity: 3;
-    color: white;
-
-}
-
-.app-card {
-    height: 200px;
-    width: 260px;
-    cursor: pointer;
-    background-color: blue;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-* {
-    transition: all 0.3s ease-out;
-  }
-
-.app__card {
-
-  width: 200px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-text-decoration: none;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 10px 40px 2px rgba(0,0,0,0.4);
-  background: rgb(29, 26, 26);
-  transform-origin: center center 0px;
-  transition: all .5s ease-out;
-  animation-name: animate;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  transform: perspective(1000px) rotateX(30deg) rotateY(3deg) rotateZ(-20deg);
-  z-index: 1;
-  display: flex;
-    justify-content :space-around;
-    align-items: center;
-    color: white;
-
-}
-.app__card:hover {
-    animation: unset;
-    text-decoration: none;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    color: white;
-}
-  .pr-text {
-    text-decoration: none;
-    max-width: 100%;
-    height: 100%;
-    color: #fff;
-}
-
-.projects .text-container {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 
 @media only screen and (max-width: 600px) {
     .text-container {
@@ -300,76 +146,24 @@ text-decoration: none;
     }
 }
 
-@media only screen and (max-width: 474px) {
-    .min-container div p {
-        font-size: 13px;
-    }
-    .but {
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 609px) {
-    .min-container div p {
-        font-size: 13px;
-    }
-    .text-container {
-        display: none;
-    }
-    .f-title {
-        margin-top: 120px;
-    }
-    .but {
-        width: 100%;
-    }
-}
-@media only screen and (width: 606px) {
-    .min-container div p {
-        font-size: 13px;
-    }
-    .text-container {
-        display: none;
-    }
-    .f-title {
-        margin-top: 120px;
-    }
-    .but {
-        width: 100%;
-    }
-}
-@media only screen and (width: 603px) {
-    .min-container div p {
-        font-size: 13px;
-    }
-    .text-container {
-        display: none;
-    }
-    .f-title {
-        margin-top: 120px;
-    }
-    .but {
-        width: 100%;
-    }
+.f-input {
+    display: flex;
+    justify-content: center;
 }
 
-@media only screen and (min-width: 610px) {
-    .min-container div p {
-        font-size: 13px;
-        display: none;
-    }
-
-    .text-container {
-        font-size: 40;
-        display: inline-block
-    }
-    .f-title {
-        margin-top: 120px;
-    }
+.f-input .form-group {
+    margin: 10px;
 }
-@media only screen and (max-width: 411px) {
-    .min-container div p {
-        font-size: 13px;
-    }
-    .but {
-        width: 100%;
-    }
+
+.but {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.but-container {
+    margin: 20px;
 }
