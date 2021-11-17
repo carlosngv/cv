@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 html, body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Source Sans Pro';
     padding: 0;
     background-color: #1e272e;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* **** Main Container ****
@@ -29,6 +35,8 @@ html, body {
     object-fit: scale-down;
 
 } */
+
+
 
 .main-container {
     color: #1e272e;
@@ -58,6 +66,14 @@ html, body {
 }
 
 
+
+.main-container__separator {
+    position: relative;
+    top: 1.2rem;
+    width: 10rem;
+    border-top: 4px solid #1e272e;
+}
+
 @keyframes type {
     0% {
         width: 0;
@@ -70,18 +86,35 @@ html, body {
     }
 }
 
+
 /* Navbar */
 
-nav{
-    padding: 20px;
-
-    border: 1px solid black;
+.header-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
+.header-nav li {
+
+    float: right;
+
+}
+
+.header-nav li a {
+    text-decoration: none;
+    display: block;
+    color:#1e272e;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1.2rem;
+}
 /* Footer and contact form */
 
 .f-title {
-    margin-top: 30px;
+    /* margin-top: 100px; */
     display: inline;
     font-size: 50px;
     color: white;
@@ -108,12 +141,14 @@ form {
 
 .social-media {
     display: flex;
-    justify-content: space-around;
+    width: 22rem;
+    justify-content: space-between;
     padding: 50px;
+    margin-right: 1.1rem
 }
 
 .fa{
-    color: white;
+    color:#1e272e;
 }
 
 .social-media a i{
@@ -122,6 +157,7 @@ form {
 
 
 #footer {
+    padding: 20px;
     height: 100vh;
     background-color: #1e272e;
     color:white;

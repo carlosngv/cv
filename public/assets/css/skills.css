@@ -1,0 +1,12 @@
+.skills-container {
+    height: 100vh;
+    background-color: #ffff;
+    color: #1e272e;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    z-index: 1000;
+}

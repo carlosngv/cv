@@ -5,23 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/resume.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
     <link rel="icon" src="assets/images/icon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
        <script src="https://use.fontawesome.com/76b63a401b.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
     <title>Carlos Ng</title>
 </head>
 
-    {{!-- Main Section --}}
 
     <body>
 
-        <nav>
-            <span>
-                @carlosngv
-            </span>
-        </nav>
+        <ul class="header-nav">
+            <li>
+                <a href="#footer">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    About me
+                </a>
+            </li>
+        </ul>
+
+    {{!-- Main Section --}}
 
         <div class="main-container">
             <img class="main-container__gif" src="/assets/images/tom_nook.gif"
@@ -30,9 +48,56 @@
             </img>
 
             <h1>Hi, I'm Carlos Ng.</h1>
-            <h3>Mobile and web enthusiast. RPA developer @ BDG</h3>
+            {{!-- <h3>Mobile and web enthusiast, and RPA developer.</h3> --}}
+            <h3>Mobile. RPA. Web.</h3>
+            <div class="main-container__separator"></div>
+             <div class="social-media">
+                <a href="https://github.com/carlosngv" target="blank">
+                    <i class="fa fa-github fa-3x"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/carlosngv/" target="blank">
+                    <i class="fa fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://twitter.com/carlosngv" target="blank">
+                    <i class="fa fa-twitter fa-3x"></i>
+                </a>
+            </div>
+        </div>
+
+        {{!-- Resume Section --}}
+
+        <div id="about" class="resume-container">
+
+            <div class="about-title">About me</div>
+
+            <div class="text-wrapper">
+            <p>
+                Hey, as mentioned above, I'm Carlos Ng.
+
+            </p>
+            <br>
+            <p>
+                Fourth-year systems engineering student at the San Carlos University of Guatemala, currently
+                working as a RPA developer, automating software to end repetitive tasks.
+                I've experience developing mobile and web applications using JavasScript
+                technologies, and as mentioned, using RPA tools.
+
+            </p>
+            <br>
+            <p>
+                Self-taught, ability to work in a team, experience with agile methodologies and open to continue learning.
+            </p>
+            </div>
 
         </div>
+
+        <div id="skills" class="skills-container">
+
+            <h1>Skills</h1>
+
+        </div>
+
     {{!-- Footer --}}
 
     {{> footer}}
