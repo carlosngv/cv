@@ -93,13 +93,13 @@ html, body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
     overflow: hidden;
+
 }
 
 .header-nav li {
-
-    float: right;
-
+    flex-grow: 1;
 }
 
 .header-nav li a {
@@ -114,7 +114,7 @@ html, body {
 /* Footer and contact form */
 
 .f-title {
-    /* margin-top: 100px; */
+    margin-top: 0px !important;
     display: inline;
     font-size: 50px;
     color: white;
@@ -164,6 +164,7 @@ form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-y: hidden;
 }
 
 @media only screen and (max-width: 600px) {

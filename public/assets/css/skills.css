@@ -10,3 +10,38 @@
     border: 1px solid black;
     z-index: 1000;
 }
+
+
+
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: 85%;
+    width: 90%;
+
+
+}
+
+.tech-angular, .tech-js, .tech-ionic, .tech-nodejs,
+.tech-sql, .tech-python, .tech-html {
+    display:flex;
+    padding: 1rem;
+    background-color: #1e272e !important;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center
+}
+
+.tech {
+    padding: 1rem;
+    background-color: #1e272e !important;
+    border-radius: 0.5rem;
+}
+
+article img {
+    max-width: 40rem;
+    height: 8rem;
+    aspect-ratio: 1;
+}

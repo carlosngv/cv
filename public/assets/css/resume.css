@@ -9,6 +9,7 @@
     justify-content: center;
     border: 1px solid black;
     z-index: 1000;
+    text-align: center;
 
 }
 
@@ -28,6 +29,11 @@
 .text-wrapper p {
     font-size: 1.2rem;
 }
+@media screen and (max-width: 600px) {
+    .text-wrapper {
+      padding: 0 10rem;
+    }
+  }
 
 /* .curve {
     position:absolute;
